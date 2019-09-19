@@ -1,0 +1,1 @@
+Folder about exercises with conditionals on 'C' programming language
