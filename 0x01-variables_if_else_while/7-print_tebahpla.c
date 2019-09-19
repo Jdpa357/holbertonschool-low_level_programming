@@ -2,14 +2,19 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ * Des: main function
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-  char alpha;
+	char alpha;
 
-  for(alpha = 'z'; alpha >= 'a'; alpha--)
-    {
-      putchar(alpha);
-    }
-  putchar('\n');
-  return (0);
+	for (alpha = 'z'; alpha >= 'a'; alpha--)
+	{
+		putchar(alpha);
+	}
+	putchar('\n');
+	return (0);
 }
