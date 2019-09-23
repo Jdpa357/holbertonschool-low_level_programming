@@ -1,12 +1,7 @@
 #include <stdio.h>
 /**
- * print_alphabet - Entry point
+ * print_alphabet - Prints the alphabet in lower case on one line
  * Return: Always 0 (Success)
- */
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
  */
 void print_alphabet(void)
 {
