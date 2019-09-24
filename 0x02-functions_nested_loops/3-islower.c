@@ -1,13 +1,17 @@
 /**
  * _islower - Returns 1 if the character is a lower case and 0 if its not
- * Return: Always 0 (Success)
+ * Return: 1 if the value is lowercase and 0 if otherwise
  */
 int _islower(int c)
 {
+	int result;
+
 	if ((c >= 'a') && (c <= 'z'))
 	{
-		return (1);
+		result = 1;
+		return (result);
 	}
 	else
-		return (0);
+		result = 0;
+		return (result);
 }
