@@ -4,10 +4,7 @@
  */
 int _islower(int c)
 {
-	int result;
-
-	result = islower(c);
-	if (result > 0)
+	if (c >= 'a' || c <= 'z')
 	{
 		return (1);
 	}

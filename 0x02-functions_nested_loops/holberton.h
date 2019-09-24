@@ -4,81 +4,15 @@
  * _isalpha - Returns 1 if character is an alphabet and 0 if its not
  * print_sign - Prints the sign of a number
  */
-void print_alphabet(void)
-{
-  char alpha;
-  int result;
-
-  for (alpha = 'a'; alpha <= 'z'; alpha++)
-    {
-      putchar(alpha);
-      result += result + alpha;
-    }
-  putchar('\n');
-
-  return;
-}
-
-void print_alphabet_x10(void)
-{
-  char alpha;
-  int result, i;
-
-  for (i = 0; i < 10; i++)
-    {
-      for (alpha = 'a'; alpha <= 'z'; alpha++)
-	{
-	  putchar(alpha);
-	  result += result + alpha;
-	}
-      putchar('\n');
-    }
-
-  return;
-}
-
-int _islower(int c)
-{
-  int result;
-  result = islower(c);
-  if (result > 0)
-    {
-      result = 1;
-      return result;
-    }
-  else
-    result = 0;
-  return result;
-}
-
-int _isalpha(int c)
-{
-  int result;
-
-  result = isalpha(c);
-  if (result > 0)
-    {
-      return(1);
-    }
-  else
-    {
-      return(0);
-    }
-}
-
-print_sign(int n)
-{
-  if (n > 0)
-    {
-      printf("+");
-      return(1);
-    }
-  else if(n == 0)
-    {
-      printf("0");
-      return(0);
-    }
-  else
-    printf("-");
-  return(-1);
-}
+void print_alphabet(void);
+void print_alphabet_x10(void);
+int _islower(int c);
+int _isalpha(int c);
+int print_sign(int n);
+int _abs(int);
+int print_last_digit(int);
+void jack_bauer(void);
+void times_table(void);
+int add(int, int);
+void print_to_98(int n);
+void print_times_table(int n);

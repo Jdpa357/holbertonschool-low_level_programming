@@ -5,13 +5,14 @@ int _isalpha(int c)
 {
 	int result;
 
-	result = isalpha(c);
-	if (result > 0)
+	if (((c >= 'a') && (c <= 'z')) || ((c >= 'A') && (c <= 'Z'))
 	{
-	return(1);
+	result = 1;
+	return(result);
 	}
 	else
 	{
-	return(0);
+	result = 0;
+	return(result);
 	}
 }
