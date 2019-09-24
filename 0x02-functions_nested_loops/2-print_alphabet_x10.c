@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
  * print_alphabet_x10 - Displays the alphabet 10 times in different lines
  * Return: Always 0 (Success)

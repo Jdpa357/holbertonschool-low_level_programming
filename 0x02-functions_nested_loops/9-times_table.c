@@ -1,3 +1,4 @@
+#include "holberton.h"
 /*
  * times_table - prints the table of the number 9 starting from 0 to 9
  */
