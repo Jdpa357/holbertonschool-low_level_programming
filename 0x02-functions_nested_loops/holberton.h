@@ -4,6 +4,7 @@
  * _isalpha - Returns 1 if character is an alphabet and 0 if its not
  * print_sign - Prints the sign of a number
  */
+int _putchar(char c);
 void print_alphabet(void);
 void print_alphabet_x10(void);
 int _islower(int c);
