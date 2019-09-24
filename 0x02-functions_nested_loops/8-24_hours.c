@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * jack_bauer - Prints all the minutes in the life of the agent Jack Bauer from 24 series
+ * jack_bauer - Prints all the minutes in the life of the agent Jack Bauer
  */
 void jack_bauer(void)
 {
