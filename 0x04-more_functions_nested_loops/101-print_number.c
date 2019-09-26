@@ -9,15 +9,36 @@
 void print_number(int n)
 {
 
+	char lastDigit;
+	int reversed;
+
 	if (n < 0)
 	{
-		_putchar('-');
-		n = -n;
+	_putchar('-');
+	lastDigit = (char)('0' - (n % 10));
+	n /= -10;
 	}
-	if (n / 10)
+	else
 	{
-		print_number(n / 10);
+	lastDigit = (char)((n % 10) + '0');
+	n /= 10;
 	}
-	_putchar(n % 10 + '0');
+
+	reversed = 0;
+
+	while (n > 0)
+	{
+		reversed = reversed * 10 + (n % 10);
+		n /= 10;
+	}
+
+	while (reversed > 0)
+	{
+		char c = (char)((reversed % 10) + '0');
+
+		_putchar(c);
+		reversed /= 10;
+	}
+	_putchar(lastDigit);
 
 }
