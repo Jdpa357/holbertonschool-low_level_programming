@@ -8,12 +8,11 @@
 
 int main(void)
 {
-	long int n = 612852475143;
+	long int n = 1231952;
 	int count;
 
 	while (n % 2 == 0)
 	{
-		printf("%d", 2);
 		n = n / 2;
 	}
 
@@ -21,7 +20,6 @@ int main(void)
 	{
 		while (n % count == 0)
 		{
-			printf("%d", count);
 			n = n / count;
 		}
 	}
