@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	long int n = 1231952;
+	long int n = 612852475143;
 	int count;
 
 	while (n % 2 == 0)
@@ -27,6 +27,10 @@ int main(void)
 	if (n > 2)
 	{
 		printf("%lu", n);
+	}
+	else
+	{
+		printf("%d", 1);
 	}
 	putchar('\n');
 	return (0);
