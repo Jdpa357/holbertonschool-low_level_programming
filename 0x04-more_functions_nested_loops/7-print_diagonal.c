@@ -8,6 +8,7 @@
 
 void print_diagonal(int n)
 {
+	char symbol = '\\';
 	int lines = 0;
 
 	if (n > 0)
@@ -22,7 +23,7 @@ void print_diagonal(int n)
 				_putchar(' ');
 				blank++;
 			}
-			_putchar('\\');
+			_putchar(symbol);
 			_putchar('\n');
 
 			lines++;
