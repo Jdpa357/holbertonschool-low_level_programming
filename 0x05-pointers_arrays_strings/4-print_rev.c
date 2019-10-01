@@ -2,7 +2,7 @@
 #include "holberton.h"
 /**
  * print_rev - Function that prints a reversed string
- * @*s: Pointer to parameter passed to function
+ * @s: Pointer to parameter passed to function
  * Return: No return (Void function)
  */
 

@@ -2,7 +2,7 @@
 #include "holberton.h"
 /**
  * _puts - Function that prints a string
- * @*str: Pointer to the value used by the function
+ * @str: Pointer to the value used by the function
  * Return: No return (Void function)
  */
 

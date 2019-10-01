@@ -1,6 +1,6 @@
 /**
  * _strlen - Function that displays the length of a string
- * @*s: Value passed to the function to process
+ * @s: Value passed to the function to process
  * Return: Length of the string expressed in number
  */
 

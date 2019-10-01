@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * puts2 - Prints the even characters of a string
- * @*str: Value passed to the function to process
+ * @str: Value passed to the function to process
  * Return: No return (Void function)
  */
 

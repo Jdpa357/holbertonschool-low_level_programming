@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * print_array - Function that prints a given number of elements
- * @*a: First value passed to function
+ * @a: First value passed to function
  * @n: Second value passed to the function (Limiter)
  * Return: No return (Void function)
  */

@@ -1,6 +1,6 @@
 /**
  * rev_string - Reverses a string given to the function
- * @*s: Value or parameters given to the function
+ * @s: Value or parameters given to the function
  * Return: No return (Void function)
  */
 
