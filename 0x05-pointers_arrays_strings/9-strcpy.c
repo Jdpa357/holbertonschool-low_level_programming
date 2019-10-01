@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * strcpy - Function to copy a given string
+ * _strcpy - Function to copy a given string
  * @dest: First parameter given to function
  * @src: Second parameter given to function
  * Return: Pointer to first parameter given
