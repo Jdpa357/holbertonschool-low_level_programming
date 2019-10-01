@@ -26,5 +26,4 @@ void rev_string(char *s)
 	{
 		s[n] = cpy[n];
 	}
-	return;
 }
