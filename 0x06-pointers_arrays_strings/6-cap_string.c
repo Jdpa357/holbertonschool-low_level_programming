@@ -24,7 +24,7 @@ char *cap_string(char *a)
 		|| a[i] == '}')
 		{
 			++i;
-			if (a[i] == ' ')
+			if (a[i] == ' ' || a[i] == '\n')
 			{
 				++i;
 			}
