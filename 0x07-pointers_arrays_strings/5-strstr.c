@@ -12,15 +12,26 @@ int compare(const char *, const char*);
 char *_strstr(char *haystack, char *needle)
 {
 
-	while (*haystack != '\0')
+	if (haystack == NULL)
 	{
-		if ((*haystack == *needle) && compare(haystack, needle))
-		{
-			return (haystack);
-		}
-		haystack++;
+		return (NULL);
 	}
-	return ('\0');
+	if (needle == NULL)
+	{
+		return (NULL);
+	}
+
+	char *ptr = haystack;
+
+	while (*ptr != '\0')
+	{
+		if ((*ptr == *needle) && compare(ptr, needle))
+		{
+			return (ptr);
+		}
+		ptr++;
+	}
+	return (NULL);
 
 }
 /**
