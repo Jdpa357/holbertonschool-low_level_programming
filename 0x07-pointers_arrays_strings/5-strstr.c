@@ -1,4 +1,5 @@
 #include "holberton.h"
+int compare(const char *, const char*);
 /**
  * _strstr - This function locates the first ocurrence of the substring
  * string of any of the bytes in the second parameter
@@ -11,21 +12,30 @@
 char *_strstr(char *haystack, char *needle)
 {
 
-	int i, j;
+	while (*haystack != '\0')
+	{
+		if ((*haystack == *needle) && compare(haystack, needle))
+		{
+			return haystack;
+		}
+		haystack++;
+	}
+	return (0);
 
-	i = 0;
-	j = 0;
-	while (*(haystack + i) != *(needle + j) && *(haystack + i) != '\0')
+}
+
+int compare(const char *first, const char *second)
+{
+
+	while (*first && *second)
 	{
-		i++;
+		if (*first != *second)
+		{
+			return (0);
+		}
+		first++;
+		second++;
 	}
-	if (*(haystack + i) != *(needle + j))
-	{
-		return (0);
-	}
-	else
-	{
-		return (haystack + i);
-	}
+	return (*second == '\0');
 
 }
