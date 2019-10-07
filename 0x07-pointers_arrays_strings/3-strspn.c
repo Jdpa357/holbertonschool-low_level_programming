@@ -1,5 +1,5 @@
 #include "holberton.h"
-/*
+/**
  * _strspn - Function to get the length of a prefix substring
  * @s: First parameter passed to function
  * @accept: Second parameter for the function to process
@@ -18,7 +18,7 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (s[i] == accept[j])
 			{
-				counter++;
+				counter += 1;
 			}
 		}
 	}
