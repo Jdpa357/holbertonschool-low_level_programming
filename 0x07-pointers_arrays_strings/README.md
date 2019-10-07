@@ -1,0 +1,1 @@
+7th project for Holberton School of software engineering about Pointers, Arrays and Strings
