@@ -16,14 +16,19 @@ char *_strstr(char *haystack, char *needle)
 	{
 		if ((*haystack == *needle) && compare(haystack, needle))
 		{
-			return haystack;
+			return (haystack);
 		}
 		haystack++;
 	}
 	return (0);
 
 }
-
+/**
+ * compare - Function to compare the processed strings
+ * @first: String to compare to
+ * @second: String which will be compared to
+ * Return: Returns true if @first and @second are equals
+ */
 int compare(const char *first, const char *second)
 {
 
