@@ -12,46 +12,21 @@ int compare(const char *, const char*);
 char *_strstr(char *haystack, char *needle)
 {
 
-	if (haystack == NULL)
+	while (*haystack != '\0')
 	{
-		return (NULL);
-	}
-	if (needle == NULL)
-	{
-		return (NULL);
-	}
-
-	char *ptr = haystack;
-
-	while (*ptr != '\0')
-	{
-		if ((*ptr == *needle) && compare(ptr, needle))
+		char *i = haystack;
+		char *j = needle;
+		while (*j == *haystack && *j != '\0' && *haystack != '\0')
 		{
-			return (ptr);
+			haystack++;
+			j++;
 		}
-		ptr++;
-	}
-	return (NULL);
-
-}
-/**
- * compare - Function to compare the processed strings
- * @first: String to compare to
- * @second: String which will be compared to
- * Return: Returns true if @first and @second are equals
- */
-int compare(const char *first, const char *second)
-{
-
-	while (*first && *second)
-	{
-		if (*first != *second)
+		if (*j == '\0')
 		{
-			return (0);
+			return (i);
 		}
-		first++;
-		second++;
+		haystack = i + 1;
 	}
-	return (*second == '\0');
+	return (0);
 
 }
