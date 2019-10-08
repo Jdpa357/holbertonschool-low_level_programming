@@ -1,4 +1,4 @@
-B/*
+/*
  * Header file for Holberton use
  */
 #ifndef HOLBERTON_H
