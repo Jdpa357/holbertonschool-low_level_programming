@@ -1,5 +1,4 @@
 #include "holberton.h"
-int compare(const char *, const char*);
 /**
  * _strstr - This function locates the first ocurrence of the substring
  * string of any of the bytes in the second parameter
