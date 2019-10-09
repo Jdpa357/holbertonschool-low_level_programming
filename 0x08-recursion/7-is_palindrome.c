@@ -1,5 +1,6 @@
 #include "holberton.h"
 int checkPal(char *, int);
+int strlenRec(char *);
 /**
  * is_palindrome - Function to check if a string is a palindrome using
  * recursion
@@ -12,9 +13,7 @@ int is_palindrome(char *s)
 
 	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
-	{
-	}
+	i = strlenRec(s);
 	if (i == 0)
 	{
 		return (1);
@@ -43,6 +42,27 @@ int checkPal(char *s, int i)
 	else if (*s == *(s + i - 1))
 	{
 		return (checkPal(s + 1, i - 2));
+	}
+	else
+	{
+		return (0);
+	}
+
+}
+
+/**
+ * strlenRec - Function to determine the length of a string recursively
+ * @s: Parameter passed to function to process
+ * Return: Length of parameter
+ */
+
+int strlenRec(char *s)
+{
+
+	if (*s != '\0')
+	{
+		s++;
+		return (1 + strlenRec(s));
 	}
 	else
 	{
