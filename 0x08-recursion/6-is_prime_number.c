@@ -9,7 +9,7 @@ int checkPrime(int, int);
 
 int is_prime_number(int n)
 {
-	
+
 	if (n > 1)
 	{
 		if (n == 2)
@@ -30,6 +30,7 @@ int is_prime_number(int n)
 /**
  * checkPrime - Function to check prime number
  * @n: Parameter to be evaluated by function
+ * @limit: Parameter to evaluate to a limit
  * Return: 1 if its prime and 0 if its not
  */
 
@@ -44,7 +45,7 @@ int checkPrime(int n, int limit)
 	}
 	else
 	{
-		if(n % limit == 0)
+		if (n % limit == 0)
 		{
 			result = 0;
 		}
