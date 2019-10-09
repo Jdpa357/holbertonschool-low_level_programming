@@ -30,7 +30,6 @@ int is_palindrome(char *s)
  * checkPal - Function to check if the string is palindrome
  * @s: String passed to function to process
  * @i: First position of the string
- * @n: Last position of the string
  * Return: 1 if its a palindrome and 0 if not
  */
 
@@ -41,9 +40,9 @@ int checkPal(char *s, int i)
 	{
 		return (1);
 	}
-	else if (*s == *(s + i -1))
+	else if (*s == *(s + i - 1))
 	{
-		return (checkPal(s + 1, i -2));
+		return (checkPal(s + 1, i - 2));
 	}
 	else
 	{
