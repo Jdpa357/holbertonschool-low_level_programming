@@ -1,5 +1,5 @@
 #include "holberton.h"
-int checkPal(char *, int, int);
+int checkPal(char *, int);
 /**
  * is_palindrome - Function to check if a string is a palindrome using
  * recursion
@@ -21,7 +21,7 @@ int is_palindrome(char *s)
 	}
 	else
 	{
-		return (checkPal(s, 0, i - 1));
+		return (checkPal(s, i));
 	}
 
 }
@@ -34,26 +34,20 @@ int is_palindrome(char *s)
  * Return: 1 if its a palindrome and 0 if not
  */
 
-int checkPal(char *s, int i, int n)
+int checkPal(char *s, int i)
 {
-	int result;
 
-	if (s[i] == s[n])
+	if (i <= 1)
 	{
-		result = 1;
+		return (1);
 	}
-	if (s[i] != s[n])
+	else if (*s == *(s + i -1))
 	{
-		result = 0;
-	}
-	else if (i < n + 1)
-	{
-		result = (checkPal(s, i + 1, n - 1));
+		return (checkPal(s + 1, i -2));
 	}
 	else
 	{
-		result = 1;
+		return (0);
 	}
 
-	return (result);
 }
