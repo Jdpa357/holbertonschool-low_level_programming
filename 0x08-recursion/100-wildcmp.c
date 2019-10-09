@@ -1,0 +1,30 @@
+#include "holberton.h"
+/**
+ * wildcmp - Function to compare two strings using '*' as wildcards
+ * @s1: First parameter passed to function to compare
+ * @s2: Second parameter passed to function to compare to
+ * Return: 1 if the strings can be considered identical and 0 if otherwise
+ */
+
+int wildcmp(char *s1, char *s2)
+{
+
+	if ((*s1 == '\0' && *s2 == '\0') || (*s2 == '*' && *(s2 + 1) == '\0'))
+	{
+		return (1);
+	}
+	if (*s2 == '*')
+	{
+		return (wildcmp(s1, s2 + 1));
+	}
+	if (*s1 == *s2)
+	{
+		return (wildcmp(s1 + 1, s2 + 1));
+	}
+	if ((*s2 != '*' && *s2 != '\0') && *s1)
+	{
+		return (wildcmp(s1 + 1, s2));
+	}
+	return (0);
+
+}
