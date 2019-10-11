@@ -1,0 +1,1 @@
+Eight project for Holberton School of software engineering about Static Libraries
