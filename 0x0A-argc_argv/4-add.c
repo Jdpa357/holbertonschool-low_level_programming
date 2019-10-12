@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 		{
 			for (index = 0; argv[i][index] != '\0'; index++)
 			{
-				if(isdigit(argv[i][index]) == 0)
+				if (isdigit(argv[i][index]) == 0)
 				{
 					printf("%s\n", "Error");
 					return (1);
