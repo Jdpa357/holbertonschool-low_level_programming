@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include "holberton.h"
 
@@ -12,26 +13,22 @@
 char *_strdup(char *str)
 {
 
-	int i;
-	unsigned int size;
+	int i, j;
 	char *result;
 
-	if (str != NULL)
-	{
-		size = 1;
-		for (i = 0; str[i] != '\0'; i++)
-		{
-			size++;
-		}
-		result = malloc(size);
-		for (i = 0; i <= (int)size; i++)
-		{
-			result[i] = str[i];
-		}
-		return (result);
-	}
-	else
-	{
+	i = 0;
+	if (str == NULL)
 		return (NULL);
+	while (str[i] != '\0')
+		i++;
+	result = malloc(i * sizeof(*str) + 1);
+	if (result == NULL)
+		return (NULL);
+	for (j = 0; j < i; j++)
+	{
+		*(result + j) = *(str + j);
 	}
+	*(result + j) = '\0';
+
+	return (result);
 }
