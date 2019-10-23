@@ -15,27 +15,17 @@
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i, *ptr;
+	int i;
 
-	ptr = malloc(sizeof(int));
-	if (array == NULL || size == '\0' || cmp == NULL)
+	if (array == NULL || size <= 0 || cmp == NULL)
 	{
-		ptr[0] = '\0';
-	}
-	else if (size <= 0)
-	{
-		ptr[0] = -1;
+		return (-1);
 	}
 	for (i = 0; i < size ;i++)
 	{
 		if (cmp(array[i]))
-		{
-			ptr[0] = i;
-			break;
-		}
-		else
-			ptr[0] = -1;
+			return (i);
 	}
-	return (*ptr);
+	return (-1);
 
 }
