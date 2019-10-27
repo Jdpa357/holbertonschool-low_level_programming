@@ -1,4 +1,7 @@
 #include "variadic_functions.h"
+#include <stdarg.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * print_numbers - Function that prints all the parameters passed into it
