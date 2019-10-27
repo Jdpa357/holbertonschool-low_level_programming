@@ -7,10 +7,10 @@ typedef struct args_t
 	void (*function)();
 } args_t;
 
-int _putchar(char);
+int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
-void print_numbers(const char *, const unsigned int, ...);
-void print_strings(const char *, const unsigned int, ...);
-void print_all(const char * const, ...);
+void print_numbers(const char *separator, const unsigned int, ...);
+void print_strings(const char *separator, const unsigned int, ...);
+void print_all(const char * const format, ...);
 
 #endif /* VARIADIC_FUNCTIONS_H */
