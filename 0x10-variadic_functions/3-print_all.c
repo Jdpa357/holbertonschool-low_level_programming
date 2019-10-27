@@ -28,7 +28,7 @@ void char_print(va_list args)
 }
 
 /**
- * str_prnt - Prints a string
+ * str_print - Prints a string
  *
  * @args: variadic list
  * Return: No return (Void function)
@@ -68,6 +68,7 @@ void print_all(const char * const format, ...)
 
 	va_list args;
 	int i, j;
+	char *separator = "";
 	args_t arguments[] = {
 		{"c", char_print},
 		{"i", int_print},
@@ -86,9 +87,9 @@ void print_all(const char * const format, ...)
 		{
 			if (*(format + i) == *(arguments[j]).format)
 			{
+				printf("%s", separator);
 				arguments[j].function(args);
-				if (*(format + i + 1))
-					printf(", ");
+				separator = ", ";
 			}
 			j++;
 		}
