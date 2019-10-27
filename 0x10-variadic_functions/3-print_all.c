@@ -1,4 +1,7 @@
 #include "variadic_functions.h"
+#include <stdarg.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * int_print - Prints the integers
