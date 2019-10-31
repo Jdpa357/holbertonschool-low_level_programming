@@ -1,6 +1,13 @@
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARIADIC_FUNCTIONS_H
 
+/**
+ * struct args_t - Structure for function uses
+ *
+ * @format: The format to print
+ * @function: The function to use
+ */
+
 typedef struct args_t
 {
 	char *format;
