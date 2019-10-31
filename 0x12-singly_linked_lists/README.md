@@ -27,5 +27,5 @@ Learning Objectives
 ### [6 - Real programmers can write assembly code in any language](./101-hello_holberton.asm)
 * A 64-bit program in assembly code that prints **Hello, Holberton.**, followed by a new line 
 
-##Author
+## Author
 * **Juan Portilla** - [jdpa352](https://github.com/Jdpa357)
