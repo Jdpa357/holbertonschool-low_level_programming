@@ -37,7 +37,11 @@ Learning Objectives
 * Function that inserts a new node at a given position, and returns the address of the new node, or NULL if it failed
 
 ### [10 - Delete at index](./10-delete_nodeint.c)
-* Function that deletes a node at a given position of a linked list of type listint_t, and return 1 if succeeded or -1 if it failed
+* Function that deletes a node at a given position of a linked list of type listint_t, and return 1 if succeeded or -1 
+if it failed
+
+### [100 - Reverse list](./100-reverse_listint.c)
+* Function that reverses a linked list of type listint_t, and returns a pointer to the first node of the reversed list
 
 ### [Header - lists.h](./lists.h)
 *  File that contains all prototypes for the functions used in this project and definitions of linked list structure type
