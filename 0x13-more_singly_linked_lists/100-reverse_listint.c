@@ -12,19 +12,21 @@ listint_t *reverse_listint(listint_t **head)
 
 	listint_t *start, *rest;
 
-	if (head == NULL || *head == NULL)
-		return (NULL);
-
-	start = *head;
-	rest = start->next;
-	if (rest == NULL)
-		return (NULL);
-	reverse_listint(&rest);
-
-	start->next->next = start;
-	start->next = NULL;
-
-	*head = rest;
+	if (*head != NULL && (*head)->next != NULL)
+	{
+		start = *head;
+		rest = (*head)->next;
+		(*head)->next = NULL;
+		*head = rest;
+		while ((*head)->next != NULL)
+		{
+			rest = (*head)->next;
+			(*head)->next = start;
+			start = *head;
+			(*head) = rest;
+		}
+		(*head)->next = start;
+	}
 
 	return (*head);
 }
