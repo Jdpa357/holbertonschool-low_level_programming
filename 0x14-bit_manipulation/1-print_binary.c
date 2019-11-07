@@ -11,9 +11,23 @@
 void print_binary(unsigned long int n)
 {
 
-	if (n > 1)
-		print_binary(n >> 1);
+	int shift, bin;
 
-	printf("%lu", n & 1);
+	if (n < 2)
+		_putchar(n + '0');
+	else
+	{
+		for (shift = 63; shift >= 0; shift--)
+		{
+			bin = n >> shift;
+			if (bin != 0)
+			{
+				if (bin & 1)
+					_putchar('1');
+				else
+					_putchar('0');
+			}
+		}
+	}
 
 }
