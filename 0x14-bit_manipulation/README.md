@@ -21,7 +21,7 @@ Learning Objectives
 ### [4 - 100](./4-clear_bit.c)
 * Function that sets the value of a bit to 0 at a given index, and returns 1 if success, or -1 if otherwise.
 
-### [5 - 101](./5-flib_bits.c)
+### [5 - 101](./5-flip_bits.c)
 * Function that returns the number of bits needed to flip to get from one number to another.
 
 ### [Header - holberton.h](./holberton.h)
