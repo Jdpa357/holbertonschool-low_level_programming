@@ -12,17 +12,16 @@
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 
-	unsigned int counter;
-	int flip;
+	int count;
 
-	counter = 0;
-	flip = n ^ m;
+	count = 0;
+	n = n ^ m;
 
-	while (flip)
+	while (n)
 	{
-		counter += flip & 1;
-		flip >>= 1;
+		counter += n & 1;
+		n >>= 1;
 	}
 
-	return (counter);
+	return (count);
 }
