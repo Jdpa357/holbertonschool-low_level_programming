@@ -66,7 +66,7 @@ int main(int ac, char **av)
 		error_98(av[1]);
 	fileDesc2 = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (fileDesc2 == -1)
-		error_98(av[2]);
+		error_99(av[2]);
 	do {
 		fileDRead = read(fileDesc, buff, 1024);
 		if (fileDRead == -1)
