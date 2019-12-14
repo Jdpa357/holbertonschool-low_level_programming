@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * delete_dnodeint_at_index - Function that deletes a node at a given index of 
+ * delete_dnodeint_at_index - Function that deletes a node at a given index of
  * doubly linked list
  *
  * @head: A pointer to the first node of the doubly linked list

@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * get_dnodeint_at_index - Function that gets the given node of a doubly 
+ * get_dnodeint_at_index - Function that gets the given node of a doubly
  * linked list
  *
  * @head: A pointer to the first node of the doubly linked list
