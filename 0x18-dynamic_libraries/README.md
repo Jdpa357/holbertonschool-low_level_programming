@@ -39,5 +39,8 @@ char *_strstr(char *haystack, char *needle);
 ### [1. Without libraries what have we? We have no past and no future](./1-create_dynamic_lib.sh)
 * A script that creates a dynamic library called liball.so from all the .c files that are in the current directory.
 
+### [Header File](./holberton.h)
+* Header file containing all prototypes used in this project
+
 ## Author
 * **Juan Portilla** - [jdpa352](https://github.com/Jdpa357)
