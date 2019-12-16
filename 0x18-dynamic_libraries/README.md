@@ -13,7 +13,7 @@ Learning objectives
 ### [0. A library is not a luxury but one of the necessities of life](./libholberton.so)
 * Dynamic library libholberton.so containing all the functions listed below:
 
-´´´bash
+```bash
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
@@ -34,7 +34,7 @@ char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
-´´´
+```
 
 ### [1. Without libraries what have we? We have no past and no future](./1-create_dynamic_lib.sh)
 * A script that creates a dynamic library called liball.so from all the .c files that are in the current directory.
