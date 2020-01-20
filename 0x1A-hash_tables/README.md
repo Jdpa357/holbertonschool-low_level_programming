@@ -34,7 +34,7 @@ Learning Objectives:
 ### [6. >>> del ht](./6-hash_table_delete.c)
 * A function that deletes a hash table.
 
-### [Header File](./holberton.h)
+### [Header File](./hash_tables.h)
 * Header file containing all prototypes used in this project
 
 ## Author
