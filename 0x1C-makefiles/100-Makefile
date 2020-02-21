@@ -3,6 +3,7 @@ CC = gcc
 SRC = main.c holberton.c
 OBJ = $(SRC:.c=.o)
 NAME = holberton
+RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
 # Phony target to avoid conflict with a file of the same name
