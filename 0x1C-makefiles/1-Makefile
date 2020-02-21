@@ -1,0 +1,6 @@
+# This rule builds the main program
+CC = gcc
+SRC = main.c holberton.c
+
+all:
+	$(CC) $(SRC) -o holberton
