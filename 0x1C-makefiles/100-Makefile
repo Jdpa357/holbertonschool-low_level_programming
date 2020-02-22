@@ -9,7 +9,7 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 .PHONY: all clean oclean fclean re
 
 # This rule builds the main program
-all: $(OBJ) m.h
+all: m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 # This rule deletes all Emacs and Vim temporary files along with the executable
